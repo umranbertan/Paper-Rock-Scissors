@@ -6,14 +6,15 @@ public class Main {
         Scanner s = new Scanner(System.in);
         int user_point = 0; //Ekstar
         int comp_point = 0;
-        int deneme=0;
+        int count=0;
 
         System.out.println("Taş kağıt makas oyununa hoş geldiniz!");
         System.out.println("1-Taş 2-Kağıt 3-Makas");
         System.out.print("Program kaç defa oynatılmalı: ");
         int n = s.nextInt();
-        while (deneme!=n) {
-            deneme++;
+        while (count!=n) { //Kullanıcının girmiş olduğu sayı kadar oyun oynasın.
+
+            count++;
             System.out.println("Seçiminiz: ");
             int select = s.nextInt();
             int bil_secim = (int) (Math.random() * 3); //Math.random()*3 diyerek bilgisayara 0 ile 3 arasında bir rastgele sayı
